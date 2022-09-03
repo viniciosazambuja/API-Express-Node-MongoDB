@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://alura:123@alura.zj2hkkl.mongodb.net/alura-node")
+mongoose.connect(process.env.MONGODB_URI)
 
 let db = mongoose.connection
 
